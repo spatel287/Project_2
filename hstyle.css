@@ -1,0 +1,336 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+html
+{
+    height:125%;
+    margin:0;
+    font-family: 'bookman';
+    font-weight: bold;
+    text-align: center;
+}
+body
+{
+    background-image: url(../Project2/hangmani.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+#firstpg,#categorypg,#finalpg,#createpg
+{
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;   
+    margin:auto;
+}
+#firstpg
+{
+    width:850px;
+    height:600px;
+    display: block;
+}
+#intro
+{
+    width:650px;
+    height:260px;
+    margin:40px auto;
+}
+#intro p,#categorypg p
+{
+    font-size:50px; 
+    text-align:center;    
+}
+#buttonContainer
+{
+    width:500px;
+    height:75px;
+    margin:50px auto;
+}
+#category,#create
+{
+    float:left;
+    background:linear-gradient(#694605,rgb(247, 206, 144)); 
+    box-sizing:border-box;
+    width:200px;
+    height:60px;
+    cursor:pointer;
+    line-height:60px;
+    font-size:25px;
+    border-radius:10px;
+    text-align:center;
+    margin:20px; 
+    box-shadow:2px 2px #f8dda2;
+}
+/*This is the category page.
+*/
+#categorypg
+{
+    display:none;
+    width:850px;
+    height:600px;
+}
+#categorypg p
+{
+    margin:20px auto 50px auto;
+}
+#categoryHolder
+{
+    width:100%;
+    height:530px;
+    line-height:60px;
+    
+}
+#category1
+{
+    width:800px;
+    height:80px;
+    margin:10px auto;
+    font-size:30px;
+}
+#food,#games
+
+{
+    width:380px;
+
+    height:70px;
+    float:left;  
+    text-align:center;
+    margin:10px;
+    background:linear-gradient(#694605,rgb(247, 206, 144));
+    border-radius:10px;
+    cursor:pointer;
+}
+#category2
+{
+    width:800px;
+    height:80px;
+    margin:0px auto;
+    font-size:30px;
+}
+#movies,#morefood
+{
+    width:380px;
+    height:70px;
+    float:left;  
+    text-align:center;
+    margin:10px;
+    background:linear-gradient(#694605,rgb(247, 206, 144));
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/*This is the game page.*/
+#gamepg
+{
+    display:none;
+    text-align:center;
+}
+#categoryName {
+    font-size: 75px;
+    margin:10px auto;
+}
+#mistakes
+{
+    width:150px;
+    height:30px;
+    font-size:25px;
+    color:red;
+    margin:0px auto 20px auto;
+}
+#letterBank
+{
+    margin: 10px auto;
+    width: 780px;
+    height: 125px;
+}
+#letterBank div
+{
+  float: left;
+  margin: 5px; 
+  font-size: 25px;
+  width: 50px;
+  height: 40px;
+  background-color:#f7e3ad;
+  cursor:pointer;
+}
+#wordWrap
+{
+    width:800px;
+    height:150px;
+    margin:0px auto;
+}
+ #letter1, #letter2, #letter3, #letter4, #letter5, #letter6, #letter7, #letter8, #letter9, #letter10, #letter11, #letter12, #letter13, #letter14, #letter15, #letter16, #letter17, #letter18, #letter19, #letter20, #letter21, #letter22, #letter23, #letter24, #letter25, #letter26, #letter27, #letter28, #letter29, #letter30, #letter31, #letter32, #letter33, #letter34, #letter35, #letter36, #letter37, #letter38, #letter39, #letter40, #letter41, #letter42, #letter43, #letter44, #letter45, #letter46, #letter47, #letter48, #letter49, #letter50, #letter51, #letter52, #letter53, #letter54, #letter55, #letter56, #letter57, #letter58, #letter59, #letter60, #letter61, #letter62, #letter63, #letter64, #letter65, #letter66, #letter67, #letter68, #letter69, #letter70, #letter71, #letter72, #letter73, #letter74, #letter75, #letter76, #letter77, #letter78, #letter79, #letter80, #letter81, #letter82, #letter83, #letter84, #letter85, #letter86, #letter87, #letter88, #letter89, #letter90, #letter91, #letter92, #letter93, #letter94, #letter95, #letter96, #letter97, #letter98, #letter99, #letter100{
+        font-family: 'Gloria Hallelujah', cursive;
+        width: 50px;
+        height: 60px;
+        margin:0px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 60px;
+        padding:0;
+    }
+ #underline1, #underline2, #underline3, #underline4, #underline5, #underline6, #underline7, #underline8, #underline9, #underline10, #underline11, #underline12, #underline13, #underline14, #underline15, #underline16, #underline17, #underline18, #underline19, #underline20, #underline21, #underline22, #underline23, #underline24, #underline25, #underline26, #underline27, #underline28, #underline29, #underline30, #underline31, #underline32, #underline33, #underline34, #underline35, #underline36, #underline37, #underline38, #underline39, #underline40, #underline41, #underline42, #underline43, #underline44, #underline45, #underline46, #underline47, #underline48, #underline49, #underline50, #underline51, #underline52, #underline53, #underline54, #underline55, #underline56, #underline57, #underline58, #underline59, #underline60, #underline61, #underline62, #underline63, #underline64, #underline65, #underline66, #underline67, #underline68, #underline69, #underline70, #underline71, #underline72, #underline73, #underline74, #underline75, #underline76, #underline77, #underline78, #underline79, #underline80, #underline81, #underline82, #underline83, #underline84, #underline85, #underline86, #underline87, #underline88, #underline89, #underline90, #underline91, #underline92, #underline93, #underline94, #underline95, #underline96, #underline97, #underline98, #underline99, #underline100{
+        display: none;
+        float: left;
+        width: 50px;
+        height: 60px;
+        margin-right: 5px;
+        margin-bottom:0px;
+        padding:0;
+    }
+ #hangImg
+ {
+     height: 300px;
+     width: 300px;
+     position: center;
+ }
+/*This is the final page*/
+#finalpg
+{
+    display:none;
+    width:850px;
+    height:600px;
+}
+#winner
+{
+    font-size:70px;
+    text-align:center;
+    color:rgb(211, 193, 34);
+    margin-top:20px;
+
+}
+#btnContainer
+{
+    width:400px;
+    height:200px;
+    margin:10px auto;
+}
+#playAgain,#mainMenu
+{
+    width:400px;
+    height:40px;
+    font-size:25px;
+    line-height:40px;
+    background:linear-gradient(#694605,rgb(247, 206, 144));
+    color:black;
+    margin:10px auto;
+    border-radius:12px;
+    text-align:center;
+    cursor:pointer;
+}
+#guessedWord
+{
+    width:400px;
+    height:40px;
+    font-size:30px;
+    line-height:40px;
+    color:red;
+    margin:20px auto;
+}
+/*This is the create your own word page.*/
+#createpg
+{
+    display:none;
+    width:850px;
+    height:600px;
+}
+#wordInput
+{
+    margin:60px auto;
+}
+#createText p
+{
+    text-align:center;
+    font-size:30px;
+}
+#input
+{
+    width:300px;
+    height:150px;
+    font-family: sans-serif;
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    font-size: 20px;
+}
+#createContainer 
+{
+    width:400px;
+    margin:10px auto;
+}
+#charContain
+{
+    margin:10px auto;
+    width:200px;
+    text-align:center;
+    float:left;
+}
+#submit
+{
+    float:left;
+    width:120px;
+    height:40px;
+    border-radius:10px;
+    margin:10px 10px 10px 40px;
+    background-color:#f3d266;
+    font-size:25px;
+    color:black;
+    text-align:center;
+    cursor:pointer;
+}
