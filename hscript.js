@@ -8,9 +8,9 @@ var nextImg = 1;
 var divWidth = 55;
 var sound = new Audio();
 
-var food1 = ["Aibak", "Huzaifa", "Rohma", "Roha", "Robeqa", "Shahzad", "Ali", "Shani", "Shabi", "Mehroz", "Mehdiya", "Husnain", "Momna", "Rahat", "Rani", "Maryam", "Mamoona", "Areeba", "Anoushy", "Musa", "Arib", "Ayza", "Izzah", "Suhaam", "Komal", "Ahsan", "Anam", "Imaan", "Esha", "Zaffa", "Shumail", "Maheen", "Noreen", "Samreen", "Waqas", "Yousaf", "Taneer", "Zarnab", "Qasim", "Kabeer", "Khalid", "Amjad"];
+var food1 = ["Pizza", "Pasta", "Chicken", "Rice", "lasagna", "Noodels"];
 var movies = ["The Godfather","The Wizard of Oz","Citizen Kane","The Shawshank Redemption","Pulp Fiction","Star Wars","Jaws","Toy Story","Titanic"];
-var games2 = ["Cat", "Dog", "Snakes", "Tiger", "Bear", "Lion", "Monkey", "Elephants", "Pig", "Deer", "Rhinoceros", "Gray Wolf", "Leopard", "Rabbit", "Frog", "Turtle", "Otter", "Horse", "Squirrel", "Fish", "Shark", "Bat", "Dolphin", "Goat", "Kangroo", "Eagle", "Cattle", "Zebra", "Giraffe", "Camel", "Owl", "Lizard", "Crocodile", "Gorilla", "Penguin", "Sheep", "Duck", "Mouse", "Rat", "Butterfly", "Cheetah", "Sherr", "Parrot", "Pigeon", "Owl", "Eagle", "Sparrow", "Crow"];
+var games2 = ["Fortnite", "Halo", "Chess", "Monopooly", "Minecraft", "Super Mario"];
 var morefood1 = ["Apple", "Apricot", "Banana", "Blackberry", "Cherry", "Coconut", "Cucumber", "Date", "Grape", "Guava", "Lemon", "Lime", "Mango", "Kiwi", "Melon", "Orange", "Papaya", "Peach", "Pear", "Plum", "Pineapple", "Olive", "Tomato", "Pumpkin", "Watermelon", "Grapes", "Carrot", "Corn", "Eggplant", "Pepper", "Red Pepper", "Grenn Pepper", "Mushrooms", "Onion", "Potato", "peas", "raddish", "Cabbage", "Rosemary", "Bean"];
 
 function category()
